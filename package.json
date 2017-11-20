@@ -1,21 +1,26 @@
 {
-  "name": "week10",
+  "name": "week11",
   "version": "1.0.0",
-  "description": "A GPS navigation system that will use the voice of God",
+  "description": "Let The Holy Spirt Guide",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Spencer-Wilcoxson/week11.git"
+  },
   "keywords": [
-    "Navigation"
+    "navigation",
+    "holy",
+    "spirit",
+    "guide",
+    "mormon"
   ],
-  "author": "Spencer Wilcoxson",
+  "author": "Spencer A. Wilcoxson",
   "license": "MIT",
-  "dependencies": {
-    "body-parser": "^1.18.2",
-    "ejs": "^2.5.7",
-    "express": "^4.16.2",
-    "express-json": "^1.0.0",
-    "googlemaps": "^1.12.0"
-  }
+  "bugs": {
+    "url": "https://github.com/Spencer-Wilcoxson/week11/issues"
+  },
+  "homepage": "https://github.com/Spencer-Wilcoxson/week11#readme"
 }
