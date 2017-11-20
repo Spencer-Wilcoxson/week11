@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/Spencer-Wilcoxson/week11/issues"
   },
-  "homepage": "https://github.com/Spencer-Wilcoxson/week11#readme"
+  "homepage": "https://github.com/Spencer-Wilcoxson/week11#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
