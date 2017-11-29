@@ -24,6 +24,9 @@
   },
   "homepage": "https://github.com/Spencer-Wilcoxson/week11#readme",
   "dependencies": {
-    "express": "^4.16.2"
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "google-maps-api": "^2.0.1",
+    "googlemaps": "^1.12.0"
   }
 }
