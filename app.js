@@ -14,6 +14,19 @@ app.get('/', function (req, res) {
 	res.render('index');
 });
 
+
+
+app.get('/nav', function(req, res) {
+	var start = req.query.start;
+	var end = req.query.end;
+	
+	res.render('nav', {
+		start: start,
+		end: end
+	});
+});
+
+
 app.get('/navigate', function (req, res) {
 	var config = init();
 	gmAPI = new GoogleMapsAPI(config);

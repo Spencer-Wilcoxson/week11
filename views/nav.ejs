@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Welcome</title>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <script type="text/javascript" src="js/example.js"></script>
+	  <link rel="stylesheet" href="css/style.css">
+   </head>
+   
+   <body>
+      <input type="hidden" name="start" value=<%=start%>>
+	  <input type="hidden" name="end" value=<%=end%>>
+	  
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDg86hNaVTkGPq0OYvHnyELgH1X7gIGfbk&callback=initMap" async defer>  
+	  </script>
+	  
+	  <div id="map" style="width:60%; height:70%" class="column">
+	  </div>
+	  
+	  <div id="steps" class="column">
+	  <h2>Directions</h2>
+	  </div>
+   </body>
+   
+</html>

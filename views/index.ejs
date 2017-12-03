@@ -1,30 +1,36 @@
 <!DOCTYPE html>
-<html style="width:100%; height:100%">
+<html>
    <head>
       <title>Welcome</title>
+	  <link rel="stylesheet" href="css/style.css">
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	  <script type="text/javascript" src="js/example.js"></script>
    </head>
    
-   <body style="width:100%; height:100%">
-      <form method="Get">
+   <body>
+      <h1>Liahona</h1>
+      <h3>Let The Holy Spirit Guide</h3>
+      <form method="Get" id="inputs" action="/nav">
 	     <label for="start">Starting Point</label>
 	     <input type="text" id="start" name="start">
 	     <br />
 	     <label for="end">Ending Point</label>
 	     <input type="text" id="end" name="end">
 	     <br />
-<!--	 Trying to get it to work with node js	
-         <input type="submit" value="Take Me">                         -->
-	     <input type="button" value="Take Me" onClick="setCenter()">
-		</form>
+	
+<!--         <input type="submit" value="Take Me">                        -->
+	    <input type="button" value="Take Me" onClick="performAction()">
+	    </form>
+		
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDg86hNaVTkGPq0OYvHnyELgH1X7gIGfbk&callback=initMap" async defer>  
+	    </script>
 	  
+	    <div id="map" class="column">
+	    </div>
 	  
-	  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDg86hNaVTkGPq0OYvHnyELgH1X7gIGfbk&callback=initMap" async defer>  
-	  </script>
-	  
-	  <div id="map" style="width:100%; height:100%">
-	  </div>
+	    <div id="steps" class="column">
+	    <h2>Directions</h2>
+	    </div>		
    </body>
    
 </html>
