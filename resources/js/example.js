@@ -1,6 +1,7 @@
 
 var map;
 var directionDisplay;
+var infoWindow;
 
 function initMap() {
 	var dirPanel = document.getElementById("steps");
@@ -9,6 +10,9 @@ function initMap() {
 		center: {lat: -34.397, lng: 150.644},
 		zoom: 15
 		});
+		
+	infoWindow = new google.maps.InfoWindow;
+	geoLocation();
 		
 	directionDisplay.setMap(map);
 	directionDisplay.setPanel(dirPanel);
@@ -65,4 +69,35 @@ function navigate() {
 		}
 	});
 	
+}
+
+function geoLocation() {
+	var geoPosition;
+	// the user must consent to use the geoLocation
+	if (navigator.geolocation) {
+		navigator.geolocation.getCurrentPosition(function(position) {
+			var pos = {
+				lat: position.coords.latitude,
+				lng: position.coords.longitude
+			};
+			
+			infoWindow.setPosition(pos);
+			map.setCenter(pos);
+            geoPosition = pos;
+			
+			var marker = new google.maps.Marker({
+				map: map,
+				position: pos
+			});
+		}, function () {
+			handleLocationError(true, infoWindow, map.getCenter());
+		});
+		
+		return geoPosition;
+	}
+	else {
+		// GeoLocation not supported
+		handleLocationError(false, infoWindow, map.getCenter());
+		window.alert("GEOLOCATION NOT SUPPORTED");
+	}
 }

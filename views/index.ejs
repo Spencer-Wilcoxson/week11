@@ -18,19 +18,20 @@
 	     <input type="text" id="end" name="end">
 	     <br />
 	
-<!--         <input type="submit" value="Take Me">                        -->
 	    <input type="button" value="Take Me" onClick="performAction()">
-	    </form>
+	  </form>
 		
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDg86hNaVTkGPq0OYvHnyELgH1X7gIGfbk&callback=initMap" async defer>  
 	    </script>
 	  
-	    <div id="map" class="column">
-	    </div>
+	    <div class="wrapper">
+	       <div id="map" class="column">
+	       </div>
 	  
-	    <div id="steps" class="column">
-	    <h2>Directions</h2>
-	    </div>		
+	       <div id="steps" class="column">
+	          <h2>Directions</h2>
+	       </div>
+		</div>
    </body>
    
 </html>

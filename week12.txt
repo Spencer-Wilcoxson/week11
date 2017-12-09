@@ -1,0 +1,36 @@
+1. Project Title / One sentence description:
+Liahona
+
+
+2. Copy and paste the URL for your web application (if applicable):
+https://immense-crag-86781.herokuapp.com/
+
+
+3. Copy and paste the URL for your source code repository (e.g., GitHub):
+https://github.com/Spencer-Wilcoxson/week11
+
+
+
+4. Describe the functionality that is currently working, along with any special instructions of how to use your web application:
+The user can enter in a starting location and the map will center to that location. If an ending destination is entered then the application will also
+find a route to the destination. The application also displays a list of steps to navigate to the destination.
+
+
+5. Describe the features that are not yet working correctly.
+The voice application doesn't currently work. Note, there are some errors with the application when using
+microsoft edge.
+
+
+6. Please select the category you feel best describes your assignment:
+
+D - Meets requirements
+
+
+
+7. Provide a brief justification (1-2 sentences) for selecting that category.
+The application begins to navigate the user to their destination. All of the calls are made using AJAX (the google api uses ajax calls)
+
+
+8. Please list any questions you have for the instructor regarding this assignment or this week's topic.
+The google API uses AJAX calls to perform its operations. When making a call to the API I have to provide a call back method. Because the Google API is using
+AJAX, do I need to provide my own AJAX calls?
